@@ -46,7 +46,7 @@ pnpm i -D @types/node typescript @types/express ts-node
 
 8. Index.ts
 
-```json
+```ts
 import express, { Request, Response } from "express";
 
 const app = express();
