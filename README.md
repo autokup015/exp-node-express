@@ -3,7 +3,7 @@
 1. init node
 
 ```shell
-pnpm i init
+pnpm init
 ```
 
 2. create index.ts
