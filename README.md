@@ -8,43 +8,37 @@ pnpm init
 
 2. create index.ts
 
-```shell
-touch index.ts
-```
+index.ts
+
 3. install express package
 
 ```shell
 pnpm i express cors body-parser nodemon
 ```
 
-4. install tsc command (if you have tsc on computer, you not should install again!)
-
-```shell
-npm install typescript -g
-```
-
-5. create tsconfig.json
+4. create tsconfig.json (if you dont have tsc => npm install typescript -g)
 
 ```shell
 tsc --init
 ```
 
-6. install types 
+5. install types
 
 ```shell
 pnpm i -D @types/node typescript @types/express ts-node
 ```
 
-7. setting package.json
+6. setting package.json
+
 ```json
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "start:mon": "nodemon src/index.ts",
+    "start": "ts-node index.ts",
+    "start:mon": "nodemon index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
 ```
 
-8. Index.ts
+7. Index.ts
 
 ```ts
 import express, { Request, Response } from "express";
@@ -72,14 +66,16 @@ app.listen(PORT, () => {
 });
 ```
 
-9. run command
+8. run command
 
 ```shell
 npm run start
 ```
 
-or
+or run with Nodemon
 
 ```shell
 npm run start:mon
 ```
+
+Enjoin for express
