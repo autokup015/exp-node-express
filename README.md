@@ -8,7 +8,9 @@ pnpm init
 
 2. create index.ts
 
+```file
 index.ts
+```
 
 3. install express package
 
